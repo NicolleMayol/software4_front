@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <link rel="icon" type="image/png" href=./images/favicon.ico>
+     <title>Turidrones</title>
+<!-- 
+
+Known Template 
+
+https://templatemo.com/tm-516-known
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <ul class = "nav navbar-nav navbar-nav-right">
+                         <li><img class = img-header src =./images/logo.png></li>
+                         <li><a href="index.html" class="navbar-brand">Turidrones</a></li>
+                    </ul>
+                    
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="index.html#excursiones" class="smoothScroll">Excursiones</a></li>
+                         <li><a href="index.html#courses" class="smoothScroll">Recorridos</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <section id="contact">
+        <div class="container">
+             <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        
+                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IkZsYXQiPjxwYXRoIGQ9Im00MTQuNzQgMjYzLjE4OTk0Yy0xLjgyMDA3IDIyLjUyLTQuNTcwMDcgMzEuMTQwMTQtMTUuMDUgMzQuMDgwMDgtMTEuMTg5OTQgMy41NC0zNy4xMjk4OC03Ljg5MDE0LTQ1LTkuNTUtNi41Njk4Mi0xLjQwOTkxLTE2LjUtNS4yOC0zMi4xNzk5MyAyLjA1LTguMTg5OTQgNC4yMi0xOC4xMzAxMyA3LjY2OTkyLTI2LjY2OTkyIDIuNzhsLTc5LjQxMDE2LTEwLjI5Yy0xNy4yOC0zLjMzMDA4LTM0LjgyOTgzLTIuMTg5OTQtNTMuNjQ5OSAzLjUxLTUuMDQgMS41Mi0xMy4yMiAzLjk5LTIxLjI1IDQtOS4zNzAxMiAwLTE4LjU1MDA1LTMuMzcwMTItMjIuMzcwMTItMTUuNTItNS4wMS0xNS45Mjk5My44NTAxLTM0LjczIDcuMjQtNTEuMDJsMS42NjAxNi00LjIzYzUuNzctMTQuNjIwMTIgMTEuNzMtMjkuNzQgMTQuNjU5OTEtNDUuMDJhNzUuODE4MjcgNzUuODE4MjcgMCAwIDAgLjk4LTIzLjY0MDE0Yy0uMTc5OTMtMS40Ni0uNDE5OTItMi45Njk3Mi0uNjY5OTItNC41Njk4Mi0uNzktNC45NS0xLjYxMDExLTEwLjA2MDA2LS43Ni0xNS4xODAxOC0uMDAwMTItMTIuNzU5OCAzNi45Mzk4OC00OS44MDk4OCAzNi45Mzk4OC00OS44MDk4OGwyMTIuNDMwMTggNDAuNTUwMDUgOC4zNTk4MiAxNC43MDk5NWM1LjUgMTIuNjQ5OSAxMy41IDM5LjYyOTg4IDE1Ljc1IDYxLjQ2IDMuMTY5OTIgMzAuMDgwMDguNjg5OTQgNDkuMzEwMDYtMS4wMSA2NS42ODk5NHoiIGZpbGw9IiNmNTdhMDgiLz48cGF0aCBkPSJtMzM2LjIzNTM1IDM1MS42Mzg2N2M5LjQxODk1LTEyLjcxODc1IDEzLjkzODQ4LTI1Ljg3MDEyIDEyLjA4ODg3LTM1LjE3OTY5LTEuMTI5ODgtNS42ODQ1Ny00LjQ2MDk0LTEwLjEyMTA5LTEwLjE4NDU3LTEzLjU2MDU0LTExLjQ4NDM4LTYuODk4NDQtMjYuNzE4NzUtNi44OTg0NC0zOC45NTk5Ni02Ljg5ODQ0aC03OC41cS0xLjQ3MDcxIDAtMy4wNjM0OC0uMDA3ODFjLTkuOTkwMjMtLjAzNjE0LTIzLjY1NjI1LS4wODUtMzQuNzg2MTMgMy4wMzgwOC0xMi4xNjQwNiAzLjQxMzA5LTE4LjYyOTg4IDkuODcwMTItMTkuNzY2NiAxOS43MzgyOC0xLjQwNjI1IDEyLjE5MDQzIDYuNTc1MTkgMjQuNTk4NjQgMTIuNzAxMTcgMzIuODcwMTJ6IiBmaWxsPSIjMDM5OTljIi8+PHBhdGggZD0ibTE4OS43NjEyMiAzMjUuNzI4OGMxMS4yNjg0OC00LjI2Nzc4IDIwLjk1MzUxLTcuMjM0NTMgMjcuMTE4NjYtMTEuMDc4OSA0LjUtMi43OTk4IDcuMTIwMTItNi4wNjk4MiA3LjEyMDEyLTEwLjY0OTkgMC0zMi01Ni0zMi01Ni04OHYtODBjMC0zMiAxOS43MS03MiA5Ni03MiAxMTIgMCA4OCA4MCA4OCAxMTJsMy4wMy0zLjAzYTE2Ljk3MDU2IDE2Ljk3MDU2IDAgMCAxIDI4Ljk3IDEydjMuNTRhMTYuOTY4NzYgMTYuOTY4NzYgMCAwIDEgLTEwLjY2OTkyIDE1Ljc2bC0yNi41NSAxMC42MjAxMmMtMTUuMjcwMDggNTAuMzM5ODgtNTguNzgwMDggNTYuMTI5ODgtNTguNzgwMDggODkuMTA5ODggMCA0LjU4MDA4IDIuNjIwMTIgNy44NTAxIDcuMTIwMTIgMTAuNjQ5OSA2LjIyMzEgMy44ODA1IDE2LjAzMjU2IDYuODY2ODIgMjcuNDM2ODMgMTEuMTk5NTlsLTY2Ljc0MDg1IDQyLjQ4Mzg0eiIgZmlsbD0iI2Y1YTk3MSIvPjxwYXRoIGQ9Im0yNDQuMzkyNTggMjU2LjczMzRhMzUuNTc4NzUgMzUuNTc4NzUgMCAwIDEgLTE4LjIzNi00Ljk4MzkxIDcuOTYzNDUgNy45NjM0NSAwIDAgMSAtMS40NDE5My0xMi40NjQwNiA4LjA4MTEzIDguMDgxMTMgMCAwIDEgOS43NzIyLTEuMjA1MTkgMjAuMjI3NTMgMjAuMjI3NTMgMCAwIDAgMTMuNDkwNyAyLjM1Nzc2IDI0LjA3MjkyIDI0LjA3MjkyIDAgMCAwIDEzLjUxMjA4LTcuMjM0MTIgOC4wMTkxNiA4LjAxOTE2IDAgMCAxIDkuNDUzNC0xLjczMjM2IDcuOTgyNjQgNy45ODI2NCAwIDAgMSAyLjM3MjY3IDEyLjUxNCAzOS45OTgyMSAzOS45OTgyMSAwIDAgMSAtMjIuNzc1NjYgMTIuMjQ2IDM4LjM5OTQ0IDM4LjM5OTQ0IDAgMCAxIC02LjE0NzQ2LjUwMTg4eiIgZmlsbD0iI2VhNTAwMyIvPjxwYXRoIGQ9Im0xODIuODE1MjQgMTYxLjE3Mzg0IDUuNjY0LTUuNjczYTggOCAwIDAgMSA4LjE4ODc3LTEuOTM4bDE4LjM3MTcxIDYuMTE3MzhhNC4yNjkwNiA0LjI2OTA2IDAgMCAxIDEuNjc0ODcgMS4wMzY2MSA0LjI2OTIgNC4yNjkyIDAgMCAxIC0zLjAyMzU5IDcuMjgzMTdoLTI4LjA0NWE0IDQgMCAwIDEgLTIuODMwNzYtNi44MjYxNnoiIGZpbGw9IiNmNTdhMDgiLz48cGF0aCBkPSJtMjk3LjE4NDc2IDE2MS4xNzM4NC01LjY2NC01LjY3M2E4IDggMCAwIDAgLTguMTg4NzctMS45MzhsLTE4LjM3MTcxIDYuMTE3MzhhNC4yNjkwNiA0LjI2OTA2IDAgMCAwIC0xLjY3NDg3IDEuMDM2NjEgNC4yNjkyIDQuMjY5MiAwIDAgMCAzLjAyMzY0IDcuMjgzMTdoMjguMDQ1YTQgNCAwIDAgMCAyLjgzMDcxLTYuODI2MTZ6IiBmaWxsPSIjZjU3YTA4Ii8+PHBhdGggZD0ibTQxNiA0OTZoLTMyMGMwLTEyNi40OCA1NS41NC0xNTUuNzUgOTMuNDUtMTcwLjE0OTkgMi40Mjk5My0uOTIwMTcgNC43OS0xLjc5IDcuMDUtMi42MTAxMSAyLjk1LTEuMDcwMDcgNS43NS0yLjA4MDA4IDguMzUwMS0zLjA2MDA2YTcwLjcyNDgyIDcwLjcyNDgyIDAgMCAwIDEyLjAyOTc4LTUuNTMgNjMuOTkyMzcgNjMuOTkyMzcgMCAwIDAgNzguMjQwMjQgMCA3MC43MjQ4MiA3MC43MjQ4MiAwIDAgMCAxMi4wMjk3OCA1LjUzYzIuNjAwMS45OCA1LjQwMDE1IDEuOTkgOC4zNTAxIDMuMDYwMDYgMi4yNi44MjAwNyA0LjYyMDEyIDEuNjg5OTQgNy4wNSAyLjYxMDExIDM3LjkxIDE0LjM5OTkgOTMuNDUgNDMuNjY5OSA5My40NSAxNzAuMTQ5OXoiIGZpbGw9IiNmMGNkODEiLz48cGF0aCBkPSJtMjExLjc2IDQ5NmgtMTE1Ljc2YzAtMTI2LjQ4IDU1LjU0LTE1NS43NSA5My40NS0xNzAuMTQ5OS0xLjU1OTg2IDU4LjgwOTgxIDUuOTIwMTIgMTE1LjkwOTkgMjIuMzEgMTcwLjE0OTl6IiBmaWxsPSIjMDM5OTljIi8+PHBhdGggZD0ibTQxNiA0OTZoLTExNS43NmMxNi4zODk4OS01NC4yNCAyMy44Njk4Ny0xMTEuMzQwMDkgMjIuMzEwMDYtMTcwLjE0OTkgMzcuOTA5OTQgMTQuMzk5OSA5My40NDk5NCA0My42Njk5IDkzLjQ0OTk0IDE3MC4xNDk5eiIgZmlsbD0iIzAzOTk5YyIvPjxwYXRoIGQ9Im0xNzUuNzY3NTggMzU1LjYzODY3YTMuOTk0MiAzLjk5NDIgMCAwIDEgLTMuMjE3NzgtMS42MTkxNCA5OC45Mjc0NyA5OC45Mjc0NyAwIDAgMSAtNy45MTk5Mi0xMi4yODgwOCAzLjk5OTkgMy45OTk5IDAgMSAxIDcuMDY2NDEtMy43NSA5MS4wODMyMSA5MS4wODMyMSAwIDAgMCA3LjI4MzIgMTEuMjc2MzYgMy45OTk4NyAzLjk5OTg3IDAgMCAxIC0zLjIxMTkxIDYuMzgwODZ6IiBmaWxsPSIjMGM2YzcxIi8+PHBhdGggZD0ibTMzNi4yMzI0MiAzNTUuNjM4NjdhNC4wMDAwOSA0LjAwMDA5IDAgMCAxIC0zLjIxMDk0LTYuMzgwODYgNzUuMjQ3MzMgNzUuMjQ3MzMgMCAwIDAgNi44OTM1Ni0xMS4xNDA2MiAzLjk5OTYgMy45OTk2IDAgMCAxIDcuMTYwMTYgMy41NjY0IDgzLjAzNjM3IDgzLjAzNjM3IDAgMCAxIC03LjYyNiAxMi4zMzU5NCAzLjk5MjM5IDMuOTkyMzkgMCAwIDEgLTMuMjE2NzggMS42MTkxNHoiIGZpbGw9IiMwYzZjNzEiLz48cGF0aCBkPSJtMjAwIDE3NmE3Ljk5OTQxIDcuOTk5NDEgMCAwIDAgLTcuNTk0NzMgNS40OTY1OGMtLjU2OTgyLS4xNzUyOS0xLjEyNzkzLS4zNjIzLTEuNjU3NzEtLjU3NzM5YTguNjQ5NyA4LjY0OTcgMCAwIDEgLTMuMjM4LTIuMTI2IDQuMDA1MiA0LjAwNTIgMCAwIDEgLS45MjYzMS0yLjc5MzE5bC4wMDAyNS0uMDIyMjItLjAwMDI1LS4wMjIyMWEyLjU4MzM1IDIuNTgzMzUgMCAxIDAgLTUuMTY2NS4wNDQ0MyA4Ljg4NzggOC44ODc4IDAgMCAwIC42OTQzMyAzLjM2NTIzIDguMTcxIDguMTcxIDAgMCAwIDIuMDIyIDIuODIxNzggMTEuODI1MjEgMTEuODI1MjEgMCAwIDAgNS4zOTU3NSAyLjY0ODY4IDE5LjQ5MjYyIDE5LjQ5MjYyIDAgMCAwIDIuNTgxMDUuNDMxNCA3Ljk5NTkyIDcuOTk1OTIgMCAxIDAgNy44OTAxMi05LjI2NzA5eiIgZmlsbD0iIzA4NGM0ZiIvPjxwYXRoIGQ9Im0yODAgMTc2YTcuOTk5NDEgNy45OTk0MSAwIDAgMCAtNy41OTQ3MyA1LjQ5NjU4Yy0uNTY5ODItLjE3NTI5LTEuMTI3OTMtLjM2MjMtMS42NTc3MS0uNTc3MzlhOC42NDk3IDguNjQ5NyAwIDAgMSAtMy4yMzgtMi4xMjYgNC4wMDUyIDQuMDA1MiAwIDAgMSAtLjkyNjMxLTIuNzkzMTlsLjAwMDI1LS4wMjIyMi0uMDAwMjUtLjAyMjIxYTIuNTgzMzUgMi41ODMzNSAwIDEgMCAtNS4xNjY1LjA0NDQzIDguODg3OCA4Ljg4NzggMCAwIDAgLjY5NDMzIDMuMzY1MjMgOC4xNzEgOC4xNzEgMCAwIDAgMi4wMjIgMi44MjE3OCAxMS44MjUyMSAxMS44MjUyMSAwIDAgMCA1LjM5NTc1IDIuNjQ4NjggMTkuNDkyNjIgMTkuNDkyNjIgMCAwIDAgMi41ODEwNS40MzE0IDcuOTk1OTIgNy45OTU5MiAwIDEgMCA3Ljg5MDEyLTkuMjY3MDl6IiBmaWxsPSIjMDg0YzRmIi8+PHBhdGggZD0ibTE1Mi4zMTAwNiA0NjkuODc5ODhjNS43NSA2LjYzMDEyIDExLjY4OTk0IDEzLjQ5MDI0IDExLjY4OTk0IDI2LjEyMDEyaC04YzAtOS42NDk5LTQuMjktMTQuNjA5ODYtOS43My0yMC44OTAxNC02LjY4OTkyLTcuNzE5NzItMTQuMjctMTYuNDY5NzItMTQuMjctMzUuMTA5ODYgMC0yNS4zNTAxIDExLjQyOTkzLTM2LjkxOTkyIDI0LjY2OTkyLTUwLjMyMDA3bC40OC0uNDlhNC4wMDI0NCA0LjAwMjQ0IDAgMSAxIDUuNzAwMiA1LjYyMDEybC0uNDkwMjQuNWMtMTIuOTggMTMuMTI5ODktMjIuMzU5ODggMjIuNjE5ODgtMjIuMzU5ODggNDQuNjg5OTUgMCAxNS42NTk5MSA1Ljk4IDIyLjU2MDA2IDEyLjMxMDA2IDI5Ljg3OTg4eiIgZmlsbD0iIzBjNmM3MSIvPjxwYXRoIGQ9Im0zODAgNDQwYzAgMTguNjQwMTQtNy41ODAwOCAyNy4zOTAxNC0xNC4yNyAzNS4xMDk4Ni01LjQ0IDYuMjgwMjgtOS43MyAxMS4yNDAyNC05LjczIDIwLjg5MDE0aC04YzAtMTIuNjI5ODggNS45Mzk5NC0xOS40OSAxMS42ODk5NC0yNi4xMjAxMiA2LjMzMDA2LTcuMzE5ODIgMTIuMzEwMDYtMTQuMjE5OTcgMTIuMzEwMDYtMjkuODc5ODggMC0yMi4wNzAwNy05LjM3OTg4LTMxLjU2MDA2LTIyLjM1OTg2LTQ0LjY4OTk0bC0uNDkwMjQtLjVhNC4wMDI0NCA0LjAwMjQ0IDAgMSAxIDUuNzAwMi01LjYyMDEybC40OC40OWMxMy4yMzk5NyAxMy40MDAxNCAyNC42Njk5IDI0Ljk2OTk2IDI0LjY2OTkgNTAuMzIwMDZ6IiBmaWxsPSIjMGM2YzcxIi8+PHBhdGggZD0ibTE1OC4xNjk5MiAzOTUuN2E0NTcuNjAzNzkgNDU3LjYwMzc5IDAgMCAxIC0yMi40NDk5Mi01My4zNDAxNHExNS4xNjUxNy01LjExNDg3IDMwLjMzMDA4LTEwLjIxOTcyYTQzNi4yNDA5MiA0MzYuMjQwOTIgMCAwIDAgMjAuNjQ5OTIgNDkuMDE5NzdxLTE0LjI2NTA2IDcuMjc1MTUtMjguNTMwMDggMTQuNTQwMDl6IiBmaWxsPSIjMDgyZjQwIi8+PHBhdGggZD0ibTE2Ny41NzAwNyAzNjguNDM5OTQtNy4xMzAxMyAzLjY0OTlxLTguMjUtMTguNTI0NzctMTQuNzgtMzcuNzc5NzhhNC4wMDAzNiA0LjAwMDM2IDAgMSAxIDcuNTgwMDYtMi41NjAwNnE2LjMyOTk0IDE4LjY1OTkxIDE0LjMzMDA3IDM2LjY4OTk0eiIgZmlsbD0iIzA4NGM0ZiIvPjxwYXRoIGQ9Im0yNTMuNzEgNDk2aC0xMS4wNjk4NmE0NDYuMTQwNTEgNDQ2LjE0MDUxIDAgMCAxIC03OC44OTAxNC0xMTYuNjI5ODhsNy4xNDAxNC0zLjYzMDEzYTQzNy42OTQ4NiA0MzcuNjk0ODYgMCAwIDAgODIuODE5ODYgMTIwLjI2MDAxeiIgZmlsbD0iIzA4NGM0ZiIvPjxwYXRoIGQ9Im0zMTUuMDg1MjIgMTQ0LjczODlzMTUuMjQ4MTEgMTcuOTI3NzcgMTEuODg2NyA0NS4wMzk0M2MtNC4zMDUyNSAzNC41NTUtMzguOTcxOTIgNDcuODg4MzQtNDIuMTc1MjggODAuNDcxNjctLjM4IDEwLjcwODMzIDQuNjcyMTEgMTguNSAxMS4wMzg3NSAyMi4zMDMgOC41Mzk2MSA0Ljg4NDUgMTguNDg1NDcgMS40MzczNyAyNi42NzEwNy0yLjc4NzM4IDE1LjY4MS03LjMyODEyIDI1LjYxODU0LTMuNDUzMTIgMzIuMTgzODYtMi4wNDczOCA3Ljg3MjE4IDEuNjU2NzYgMzMuODA5NjggMTMuMDk0MjYgNDQuOTk2MiA5LjU0Nzg0IDEwLjQ4MDE1LTIuOTMyNzUgMTMuMjMwMTUtMTEuNTU3NzUgMTUuMDU0MDUtMzQuMDgwNDIgMS42OTY5My0xNi4zNzMxNiA0LjE3NjEtMzUuNjAyMzMgMS4wMTE0Ni02NS42ODU5LTIuMjUyMDMtMjEuODMzMDktMTAuMjUyMDMtNDguODEyMjYtMTUuNzUyMDMtNjEuNDYwN2wtNjEuMjUtMjkuNzg5MDZ6IiBmaWxsPSIjZjU3YTA4Ii8+PHBhdGggZD0ibTMwNy4xNDk5IDMyMC4xNzk5M2E3NS45MTE2MyA3NS45MTE2MyAwIDAgMSAtMTAyLjI5OTggMCA3MC43MjQ4MiA3MC43MjQ4MiAwIDAgMCAxMi4wMjk3OC01LjUzIDYzLjk5MjM3IDYzLjk5MjM3IDAgMCAwIDc4LjI0MDI0IDAgNzAuNzI0ODIgNzAuNzI0ODIgMCAwIDAgMTIuMDI5NzggNS41M3oiIGZpbGw9IiNmM2I3M2YiLz48cGF0aCBkPSJtMzA3LjE0OTkgMzIwLjE3OTkzYTc1LjkxMTYzIDc1LjkxMTYzIDAgMCAxIC0xMDIuMjk5OCAwYy0yLjYwMDEuOTgtNS40MDAxNSAxLjk5LTguMzUwMSAzLjA2MDA2YTgzLjg3MTI5IDgzLjg3MTI5IDAgMCAwIDExOSAwYy0yLjk0OTk1LTEuMDcwMDctNS43NS0yLjA4MDA4LTguMzUwMS0zLjA2MDA2eiIgZmlsbD0iI2Y1N2EwOCIvPjxwYXRoIGQ9Im00MDAgMTM2LjA0Yy0xMS4wODAwOCAzLjQ2LTE3LjQ3Ljk2LTI3LjQzOTk0LTIuMDFhNjYuODczNTUgNjYuODczNTUgMCAwIDAgLTMwLjkxOTkyLS4wNGMtNS42MTAxNCAxLjMxMDA1LTEwLjQ0MDE0IDMuNjc5OTItMTUuMTIwMTQgNS45OGE5MS44MTM0NSA5MS44MTM0NSAwIDAgMSAtOS4zNjAxMSA0LjE3MDE3Yy02LjE4OTk0IDIuMjMtMTQuNjQ5OS44MTk4Mi0yMi4xMTk4Ny0uNDIwMTctMS41NC0uMjYtMy4wNC0uNTEtNC40OC0uNzItMTgtMi42NDk5LTM1LjY2MDE2LTcuNjY5OTItNTMuNjY5OTItMTMuMDItMy43NjAyNi0xLjEyMDEyLTcuNjIwMTItMi4zMjAwNy0xMS4zNjAxMS0zLjQ5LTEzLjgtNC4yOS0yOC4wNjAwNi04LjczLTQyLjU1LTEwLjY2OTkyYTgxLjA0MTYzIDgxLjA0MTYzIDAgMCAwIC0yNS41ODAwOC43NWMtLjU1OTgxLjEwOTg2LTEuMTA5ODYuMjQtMS42Mjk4OC4zNzk4OGw0LjI3LTIxLjA5OTg1YzYuMDgwMDktMjMuODEwMTEgMjAuMTE5ODgtNTQuNTcwMTEgNTIuNDg5OTctNjUuODcwMTEgMTkuNjM5ODktNi44NTAxIDQyLjEyOTg4LTYuMjkgNTcuMzI5ODMtNS4yNyAyMC4yMzAyMyAxLjM1MDEgMzguNzQwMjQgNC45MzAxOCA1NS4wMTAyNiAxMC42NDk5IDIyLjM0OTg1IDcuODUwMSAzOS44NDk4NSAxOS4wNjAwNiA1MiAzMy4zMTAwNiAxNS4wMDAwMyAxNy41ODAwNCAyMy4wMDAwMyA0MC44ODAwOSAyMy4xMjk5MSA2Ny4zNzAwNHoiIGZpbGw9IiMwMzk5OWMiLz48ZyBmaWxsPSIjMGM2YzcxIj48cGF0aCBkPSJtMjAwIDcyIDE2LTE2IDMyIDgtMTYgMTZ6Ii8+PHBhdGggZD0ibTMxNC43MiAxNDQuODEwMDZjLTUuODYwMTEgMS4yMS0xMy4xNDk5LS4wMS0xOS42Nzk5My0xLjA5MDA5LTEuNTQtLjI2LTMuMDQtLjUxLTQuNDgtLjcyLTE4LTIuNjQ5OS0zNS42NjAxNi03LjY2OTkyLTUzLjY2OTkyLTEzLjAyLTMuNzYwMjYtMS4xMjAxMi03LjYyMDEyLTIuMzIwMDctMTEuMzYwMTEtMy40OS0xMy44LTQuMjktMjguMDYwMDYtOC43My00Mi41NS0xMC42Njk5MmE4MS4wNDE2MyA4MS4wNDE2MyAwIDAgMCAtMjUuNTgwMDguNzVjLTEwLjkyOTk2IDIuMTg5OTUtMTQuMjU5ODIgOC44Mjk4NS0xNS4xMjk5NiAxNC4wMTk3OWEyNi4zNTUgMjYuMzU1IDAgMCAwIC0uMzUwMSA0LjA0bC00LjQ2OTkgMS4xNTAxNmMtNy4zNjk4NyAxLjg0MDA5LTE0LjUxLTMuMTEwMTEtMTguMDItOC40OC0xLjY4OTk0LTIuNTkwMDktNS4wOTk4NS05LjMxMDA2LS4yMS0xNS42MzAxMyAzLjc0LTQuODMwMDggMTUuOTI5OTMtMTUuOTggNDcuOTYtMTUuMTY5OTIgMTMuNTQuMzM5ODQgMjcuMTYwMTYgMy43OSA0Mi44NDAwOSAxMC44MzAwOCA3LjI0IDMuMjU5NzYgMTQuNTIgNi45NiAyMS41NjAwNiAxMC41NDk4IDcuMDg5NzcgMy42MTAxNyAxNC40MTk4NSA3LjM1MDE3IDIxLjg4OTg1IDEwLjcyMDI3IDIwLjI2IDkuNjQ5OSA1MS42ODk5MSAxNy43OTk4IDYxLjI1IDE2LjIwOTk2eiIvPjxwYXRoIGQ9Im0xODkuNTkyNzcgMzI1LjUyMDUxYy0uMDQ2ODcgMC0uMDkyNzctLjAwMS0uMTM5NjUtLjAwMmE0LjAwMTA2IDQuMDAxMDYgMCAwIDEgLTMuODYxMzItNC4xMzQ3NmMuMTE0MjUtMy4zMzU5NC4yNjE3Mi02Ljc2MTcyLjQzNzUtMTAuMTgxNjRhNC4wMDA0MyA0LjAwMDQzIDAgMCAxIDcuOTkwMjMuNDEyMTFjLS4xNzM4MyAzLjM3NC0uMzE5MzMgNi43NTI5My0uNDMxNjQgMTAuMDQzYTQuMDAwNTcgNC4wMDA1NyAwIDAgMSAtMy45OTUxMiAzLjg2MzI5eiIvPjxwYXRoIGQ9Im0zMjIuNDA3MjMgMzI1LjUyMDUxYTQuMDAwNTcgNC4wMDA1NyAwIDAgMSAtMy45OTUxMi0zLjg2MzI4Yy0uMTEyMzEtMy4yOS0uMjU3ODEtNi42NjktLjQzMTY0LTEwLjA0M2E0LjAwMDQzIDQuMDAwNDMgMCAxIDEgNy45OTAyMy0uNDEyMTFjLjE3NTc4IDMuNDE5OTIuMzIzMjUgNi44NDU3LjQzNzUgMTAuMTgxNjRhNC4wMDEwNiA0LjAwMTA2IDAgMCAxIC0zLjg2MTMyIDQuMTM0NzZjLS4wNDU4OC4wMDEwMS0uMDkyNzguMDAxOTktLjEzOTY1LjAwMTk5eiIvPjwvZz48cGF0aCBkPSJtMjQwIDIyMGgtNGExNiAxNiAwIDAgMSAwLTMyaDRhNCA0IDAgMCAxIDAgOGgtNGE4IDggMCAwIDAgMCAxNmg0YTQgNCAwIDAgMSAwIDh6IiBmaWxsPSIjZTM3MDY2Ii8+PC9nPjwvc3ZnPg=="  class="img-responsive" alt="LOGO">
+                    </div>
+               </div>
+
+                  <div class="col-md-6 col-sm-12">
+                       <form id="contact-form" role="form" action="" method="post">
+                            <div class="section-title">
+                                 <h2>Regístrate</h2>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+                                
+                                 <input type="text" class="form-control" placeholder="Documento" name="documento" id="txtDocumento" required="">
+                                 <select name="tipodocumento" class="form-control" placeholder="Tipo de Documento" id="cmbTipoDocumento" required="">
+                                     <option>Cédula de Ciudadanía</option>
+                                     <option>Cédula de Extranjería</option>
+                                     <option>Pasaporte</option>
+                                     <option>Otro</option>
+                                 </select>
+                                 <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="txtNombre" required="">
+                                 <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="txtApellido" required="">
+                                 <input type="email" class="form-control" placeholder="Correo Electrónico" name="email" id="txtEmail" required="">
+                                 <input type="text" class="form-control" placeholder="telefono" name="telefono" id="txtTelefono" required="">
+                                 <input type="date" class="form-control" placeholder="Fecha de Nacimiento" name="fechaNacimiento" id="txtFechaNacimiento" required="">
+                                 <select name="genero" class="form-control" placeholder="Género" id="cmbGenero" required="">
+                                    <option>Femenino</option>
+                                    <option>Masculino</option>
+                                    <option>Otro</option>
+                                </select>
+                                <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" id="txtContraseña" required="">
+                                <input type="password" class="form-control" placeholder="Confirme su contraseña" id="txtConfirmarContraseña" name="contraseña2" required="">
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-12">
+                                 <input type="button" class="form-control" name="inscribir" value="Registrarse" onclick="registrarUsuarioParte2()">
+                                 <div id="mensaje">
+                    
+                                 </div>
+                            </div>
+
+                       </form>
+                  </div>
+
+
+
+             </div>
+        </div>
+   </section>   
+
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Equipo de Desarrollo</h2>
+                                   
+                              </div>
+                              <address>
+                                   
+                                   <h4 style="color:azure">Los Iguanodontes:</h4>
+                                   <p>Juan José Gómez<br> Kevin González Arango <br> Nicolle Mayol</p>
+                              </address>
+
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2021 Turidrones</p>
+                                   <img src="./images/Recurso 2@2x.png" class=img-responsive style = padding:1em>
+                              </div>
+
+                              
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p><a href="https://api.whatsapp.com/send?phone=573182730625">+57 318 273 0625</a>, <a href="https://api.whatsapp.com/send?phone=573052230640">+57 305 223 0640</a>, <a href="https://api.whatsapp.com/send?phone=573023818138">+57 302 381 8138</a></p>
+                                   <p><a href="mailto:kevinloco1920@gmail.com">kevinloco1920@gmail.com</a></p>
+                                   <p><a href="mailto:nmayolm0@gmail.com">nmayolm@gmail.com</a></p>
+                                   <p><a href="mailto:juanjosegomez@gmail.com">juanjosegomez@gmail.com</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Quick Links</h2>
+                                   <ul>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Investor</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="js/registro.js"></script>
+
+</body>
+</html>
