@@ -71,10 +71,21 @@ https://templatemo.com/tm-516-known
     transition: 0.5s;
     text-decoration: none !important;
   }
+  .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .intro {
+    height: 50vh;
+  }
 
   a,
   input, button,
   .form-control {
+    margin: 10px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
