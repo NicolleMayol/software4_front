@@ -79,6 +79,10 @@ https://templatemo.com/tm-516-known
 
           </div>
      </section>
+     <div>
+        <input type="text" id="txtPruebaBuscar" class="form-control" placeholder="¿Qué estás buscando?" />
+        <button class="submit-btn form-control" onClick="mostrarBusqueda()">Buscar</button>
+     </div>
     <section id="home">
         <div class="row">
             <div class="owl-carousel owl-theme home-slider">
@@ -94,7 +98,7 @@ https://templatemo.com/tm-516-known
                                           <div class="row justify-content-center">
                                             <div class="col-md-6 mb-3 mb-md-0">
                                               <div id="basic" class="form-outline form-white">
-                                                <input type="text" id="form1" class="form-control form-control-lg" placeholder="¿Qué estás buscando?" />
+                                                <input type="text" id="txtBuscarBuscador" class="form-control" placeholder="¿Qué estás buscando?" />
                                               </div>
                                             </div>
                                             <div class="col-md-4 mb-3 mb-md-0">
@@ -103,18 +107,31 @@ https://templatemo.com/tm-516-known
                                               </div>
                                             </div>
                                             <div class="col-md-2">
-                                              <input class="btn btn-info btn-block btn-lg" type="submit" value="Search" />
+                                              <button class="submit-btn form-control" onClick="mostrarBusqueda()">Buscar</button>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                </div>    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+ 
+ 
+                     <div id="resultadoBusqueda">
+                       
+ 
+                     </div>
+ 
+                </div>
+           </div>
         </div>
+        
     </section>
     <!-- FOOTER -->
     <footer id="footer">
@@ -182,7 +199,7 @@ https://templatemo.com/tm-516-known
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-     <script src="js/index2.js"></script>
+     <script src="js/buscador.js"></script>
 
 </body>
 

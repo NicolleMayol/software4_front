@@ -33,6 +33,8 @@ let validarInicioSesion = () => {
             localStorage.setItem('documento',JSON.stringify(respuesta.data.usuario.documento))
             localStorage.setItem('nombreLogin',respuesta.data.usuario.nombres)
             localStorage.setItem('apellidoLogin',respuesta.data.usuario.apellidos)
+            localStorage.setItem('info',respuesta.data.info)
+            console.log(respuesta)
             document.location.href = 'http://127.0.0.1:5500/index2.html'
         } else {
             data = `<div class="alert alert-danger" role="alert">

@@ -1,6 +1,7 @@
 let documento = parseInt(localStorage.getItem('documento'))
 let nombreLogin = localStorage.getItem('nombreLogin')
 let apellidoLogin = localStorage.getItem('apellidoLogin')
+let token = localStorage.getItem('info')
 
 let cargarDatosLogin = () => {
     let nombre = document.getElementById("nombreUsuarioLogin")
@@ -88,7 +89,7 @@ let listarLugaresLogin = () => {
 
 let listarLugaresInscritos = () => {
     let data = ""
-    axios.get(`http://localhost:3000/api/v1/recorridos/${documento}`).then(respuesta => {
+    axios.get(`http://localhost:3000/api/v1/recorridos/${documento}`,{headers:{"token":token}}).then(respuesta => {
         console.log(respuesta.data)
         let lista = document.getElementById("listaLugaresInscritos")
         for (let i = 0; i < respuesta.data.length; i++) {
@@ -101,16 +102,7 @@ let listarLugaresInscritos = () => {
                  <div class="team-info">
                       <h3>${lugar.nombre}</h3>
                  </div>
-                 <ul class="social-icon">
-                      <span><i class="fa fa-calendar"></i>${lugar.fecha}</span>
-                      <br>
-                      <span><i class="fa fa-clock-o"></i> ${lugar.hora}</span>
-                 </ul>
-                 <div class="courses-info">
-                      <div class="courses-price free">
-                           <a href="registrarExcursion.html" onClick = "subirDatosExcursion(${lugar.idlugar})"><span>PUBLICAR</span></a>
-                      </div>
-                 </div>
+                 
             </div>
        </div>`
         }
@@ -136,8 +128,8 @@ let subirDatosLugar = (idLugar,lat,long) => {
 
 listarLugaresInscritos()
 
-listarLugaresLogin()
+//listarLugaresLogin()
 
-listarExcursionesLogin()
+//listarExcursionesLogin()
 
 cargarDatosLogin()
