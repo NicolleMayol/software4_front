@@ -74,7 +74,7 @@ let listarLugaresLogin = () => {
 
                       <div class="courses-info">
                            <div class="courses-price">
-                                <a href="recorridos.html" onClick = "subirDatosLugar(${lugar.id},${lugar.lat},${lugar.long})"><span>VER MÁS</span></a>
+                                <a href="recorridos.html" onClick = "subirDatosLugar(${lugar.id})"><span>VER MÁS</span></a>
                            </div>
                       </div>
                  </div>
@@ -118,11 +118,9 @@ let subirDatosExcursion = (idlugar,fecha) => {
 }
 
 
-let subirDatosLugar = (idLugar,lat,long) => {
+let subirDatosLugar = (idLugar) => {
     console.log('pepe')
     localStorage.setItem('idLugar',JSON.stringify(idLugar))
-    localStorage.setItem('lat',JSON.stringify(lat))
-    localStorage.setItem('long',JSON.stringify(long))
 
 }
 
