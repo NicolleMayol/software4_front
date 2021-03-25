@@ -11,7 +11,7 @@ let guardarLugares = () => {
 }
 
 let mostrarBusqueda = () => {
-     console.log(document.getElementById('txtPruebaBuscar').value)
+     console.log(document.getElementById('txtBusqueda').value)
 }
 
 let listarLugaresBusqueda = () => {
