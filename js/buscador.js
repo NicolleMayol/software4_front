@@ -40,6 +40,7 @@ let mostrarBusqueda = () => {
                  </div>
             </div>
        </div>`
+       
           }
      }
      if(data.length !== 0){
