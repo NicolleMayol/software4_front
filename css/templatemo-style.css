@@ -81,6 +81,11 @@ https://templatemo.com/tm-516-known
   .intro {
     height: 100%;
   }
+
+  .h1-search{
+    font-weight: bold;
+    color: white;
+  }
   
   .mask-custom {
     background: rgba(24, 24, 16, .2);
@@ -427,15 +432,28 @@ https://templatemo.com/tm-516-known
 	background-position: center;
   }
 
-  .home-slider .item-second {
-    background-image: url(../images/slide2.png);
-  }
-
   .home-slider .item-third {
     background-image: url(../images/slider3.jpg);
   }
 
+  .searchbar .caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(20,20,20,0.2);
+    height: 100%;
+    color: #fff;
+  }
+ 
+  .searchbar{
+    background-image: url(../images/slide2.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 650px;
 
+  }
 
   /*---------------------------------------
       FEATURE              
