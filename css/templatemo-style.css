@@ -1115,6 +1115,14 @@ https://templatemo.com/tm-516-known
   position: relative;
 }
 
+.desc{
+    width: relative;
+    height: 500px;
+    position: relative;
+    padding: 0;
+    
+}
+
 /* Bottom right text */
 .text-block {
   position: absolute;
