@@ -1115,14 +1115,6 @@ https://templatemo.com/tm-516-known
   position: relative;
 }
 
-.desc{
-    width: relative;
-    height: 500px;
-    position: relative;
-    padding: 0;
-    
-}
-
 /* Bottom right text */
 .text-block {
   position: absolute;
@@ -1136,4 +1128,35 @@ https://templatemo.com/tm-516-known
     color: #ffffff;
     display: block;
     padding: 5px 10px;
+}
+
+/*VIDEOS*/ 
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}
+  .map-responsive {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 1px;
+      position: relative;
+    }
+
+#map{
+  height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
