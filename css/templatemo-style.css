@@ -1160,3 +1160,9 @@ https://templatemo.com/tm-516-known
 	top: 0;
 	width: 100%;
 }
+
+.img-responsive {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
