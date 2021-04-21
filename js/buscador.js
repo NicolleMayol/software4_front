@@ -60,8 +60,7 @@ let subirDatosLugar = (idLugar,documento) => {
     }).catch(error => {
         console.log(error)
     })
- 
- }
+}
 
 
 
