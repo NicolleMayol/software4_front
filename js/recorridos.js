@@ -47,7 +47,7 @@ let asignarFotos = () => {
                 <div class="courses-thumb">
                     <div class="courses-top">
                         <div class="courses-image">
-                            <img src="${foto.url}" class="img-responsive" alt="">
+                            <img src="${foto.url}" class="img-responsive col-xs-12" style="width: 100%;" alt="">
                         </div>
                     </div>
                 </div>
