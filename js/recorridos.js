@@ -43,17 +43,15 @@ let asignarFotos = () => {
     for (let i = 0; i < respuesta.data.length; i++) {
       let foto = respuesta.data[i]
       data +=
-        `<div class="col-md-4 col-sm-4">
-            <div class="item">
-                <div class="courses-thumb">
-                    <div class="courses-top">
-                        <div class="courses-image">
-                            <img src="${foto.url}" class="img-responsive col-xs-12" style="width: 100%;" alt="">
-                        </div>
-                    </div>
-                </div>
+        `
+        <div class="col-md-3 col-sm-6">
+            <div class="team-thumb">
+                 <div class="team-image">
+                      <img src="${foto.imagen}" class="img-responsive" alt="">
+                 </div>
+                 
             </div>
-        </div>`
+       </div>`
     }
     listaFotos.innerHTML = data;
   }).catch(error => {
