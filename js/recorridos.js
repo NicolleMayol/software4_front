@@ -47,7 +47,7 @@ let asignarFotos = () => {
         <div class="col-md-3 col-sm-6">
             <div class="team-thumb">
                  <div class="team-image">
-                      <img src="${foto.imagen}" class="img-responsive" alt="">
+                      <img src="${foto.url}" class="img-responsive" alt="">
                  </div>
                  
             </div>
