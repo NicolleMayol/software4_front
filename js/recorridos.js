@@ -38,11 +38,12 @@ let asignarVideo = () => {
 
 let asignarFotos = () => {
   let data = ""
-    axios.get(`http://localhost:3000/api/v1/fotos/${idLugar}`,{ headers: { "token": token } }).then(respuesta => {
-        let listaFotos = document.getElementById("idFotos")
-        for (let i = 0; i < respuesta.data.length; i++) {
-            let foto = respuesta.data[i]
-            data += `<div class="col-md-4 col-sm-4">
+  axios.get(`http://localhost:3000/api/v1/fotos/${idLugar}`, { headers: { "token": token } }).then(respuesta => {
+    let listaFotos = document.getElementById("idFotos")
+    for (let i = 0; i < respuesta.data.length; i++) {
+      let foto = respuesta.data[i]
+      data +=
+        `<div class="col-md-4 col-sm-4">
             <div class="item">
                 <div class="courses-thumb">
                     <div class="courses-top">
@@ -53,11 +54,11 @@ let asignarFotos = () => {
                 </div>
             </div>
         </div>`
-        }
-        listaFotos.innerHTML = data;
-    }).catch(error => {
-        console.log(error)
-    })
+    }
+    listaFotos.innerHTML = data;
+  }).catch(error => {
+    console.log(error)
+  })
 }
 
 function initMap() {
@@ -79,7 +80,7 @@ function initMap() {
         mapId: "6cd337914d17672b"
       });
 
-      addMarker(myLatLng, map, "Udem");
+    addMarker(myLatLng, map, "Udem");
     console.log(myLatLng)
 
   }).catch(error => {
