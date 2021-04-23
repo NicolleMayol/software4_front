@@ -1,14 +1,22 @@
 let lat = 0
 let long = 0
+let imagenLugar = ''
 let idLugar = localStorage.getItem('idLugar')
 let token = localStorage.getItem('info')
 let map;
 
+let cargarImagen = () => {
+  let fondo = document.getElementById('contact2')
+  console.log(imagenLugar)
+  fondo.style.backgroundImage = `url(${imagenLugar})`
+}
 
 let etiquetaNombre = () => {
   axios.get(`http://localhost:3000/api/v1/lugares/${idLugar}`, { headers: { "token": token } }).then(respuesta => {
     let nombre = document.getElementById('nombreRecorrido')
+    imagenLugar = respuesta.data[0].imagen
     nombre.innerHTML = respuesta.data[0].nombre
+    cargarImagen()
   }).catch(error => {
     console.log(error)
   })
