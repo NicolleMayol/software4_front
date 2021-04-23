@@ -45,11 +45,10 @@ let asignarFotos = () => {
       data +=
         `
         <div class="col-md-3 col-sm-6">
-            <div class="team-thumb">
-                 <div class="team-image">
+            <div class="team-thumb2">
+                 <div class="team-image2">
                       <img src="${foto.url}" class="img-responsive" alt="">
-                 </div>
-                 
+                 </div> 
             </div>
        </div>`
     }
